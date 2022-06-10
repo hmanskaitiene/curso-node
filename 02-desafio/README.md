@@ -1,7 +1,7 @@
 
 # Desafío: Manejo de Archivos en Javascript
 
-Dentro de la función asincronica main estan las llamadas a los 5 metodos:
+Dentro de la función asincronica main están las llamadas a los 5 métodos:
 - save() 
 - getById()
 - getAll()
