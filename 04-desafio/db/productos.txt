@@ -1,0 +1,1 @@
+[{"price":"1500","thumbnail":"https://cdn.imagen.com/imagen.jpg","title":"Producto de prueba numero 1","id":1},{"price":100,"thumbnail":"https://cdn.imagen.com/imagen.jpg","title":"Producto ejemplo XX","id":2},{"price":100,"thumbnail":"https://cdn.imagen.com/imagen.jpg","title":"Producto ejemplo XX","id":3}]
