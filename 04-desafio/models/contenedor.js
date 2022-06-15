@@ -82,6 +82,11 @@ class Contenedor {
         try{
             const productos = await this.getAll();
             const index = productos.findIndex(p => p.id === id);
+
+            if (index > -1) {
+                throw new Error(`producto no encontrado`);
+            }
+
             product.id = id;
             productos[index] = product;
             await fs.writeFile(this.filename,JSON.stringify(productos));
