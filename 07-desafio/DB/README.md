@@ -1,1 +1,1 @@
-# En este directorio van las bases sqlite
+En este directorio van las bases sqlite
