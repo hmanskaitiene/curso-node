@@ -1,0 +1,10 @@
+{"_id":{"$oid":"62c4815c68dbf84a0f0be565"},"usermail":"pepe@argento.com.ar","fecha":{"$date":"2022-07-05T18:22:20.542Z"},"mensaje":"Hola"}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be566"},"usermail":"carlos@ejemplo.com.ar","fecha":{"$date":"2022-07-05T18:22:20.542Z"},"mensaje":"Como estas?"}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be567"},"usermail":"pepe@argento.com.ar","fecha":{"$date":"2022-07-05T18:22:20.543Z"},"mensaje":"Hola"}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be568"},"usermail":"carlos@ejemplo.com.ar","fecha":{"$date":"2022-07-05T18:22:20.543Z"},"mensaje":"Bien y vos?"}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be569"},"usermail":"pepe@argento.com.ar","fecha":{"$date":"2022-07-05T18:22:20.543Z"},"mensaje":"Bien, y tu familia?"}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be56a"},"usermail":"carlos@ejemplo.com.ar","fecha":{"$date":"2022-07-05T18:22:20.543Z"},"mensaje":"Todo tranquilo por suerte, la tuya?"}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be56b"},"usermail":"pepe@argento.com.ar","fecha":{"$date":"2022-07-05T18:22:20.543Z"},"mensaje":"Todo en orden"}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be56c"},"usermail":"carlos@ejemplo.com.ar","fecha":{"$date":"2022-07-05T18:22:20.543Z"},"mensaje":"Bueno, manda saludos"}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be56d"},"usermail":"pepe@argento.com.ar","fecha":{"$date":"2022-07-05T18:22:20.543Z"},"mensaje":"Chau!"}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be56e"},"usermail":"carlos@ejemplo.com.ar","fecha":{"$date":"2022-07-05T18:22:20.543Z"},"mensaje":"Nos vemos"}

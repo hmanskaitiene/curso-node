@@ -1,0 +1,8 @@
+{"_id":{"$oid":"62c4815c68dbf84a0f0be572"},"nombre":"Alpargatas","precio":1280,"foto":"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png","stock":100}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be573"},"nombre":"Ojotas","precio":1700,"foto":"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png","stock":100}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be574"},"nombre":"Sandalias","precio":2300,"foto":"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png","stock":100}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be575"},"nombre":"Remera","precio":2860,"foto":"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png","stock":100}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be576"},"nombre":"Buzo","precio":3350,"foto":"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png","stock":100}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be577"},"nombre":"Pantalón","precio":4320,"foto":"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png","stock":0}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be578"},"nombre":"Cinturón","precio":4990,"foto":"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png","stock":0}
+{"_id":{"$oid":"62c4815c68dbf84a0f0be579"},"nombre":"Bermudas","precio":4120,"foto":"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png","stock":0}
