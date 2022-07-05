@@ -29,11 +29,14 @@ db.productos.insertMany([
     {nombre:"Cinturón",precio:4990,foto:"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png"},
 ])
 
-db.mensajes.find();
-db.productos.find();
+print("Colección mensajes:\n")
+printjson(db.mensajes.find());
 
-db.productos.estimatedDocumentCount();
-db.mensajes.estimatedDocumentCount();
+print("\nColección productos:\n")
+printjson(db.productos.find());
+
+print(`Cantidad total de productos: ${db.productos.estimatedDocumentCount()}`);
+print(`Cantidad total de mensajes: ${db.productos.estimatedDocumentCount()}`);
 
 db.productos.insertOne({nombre:"Bermudas",precio:4120,foto:"https://pics.freeicons.io/uploads/icons/png/9690872761656849811-512.png"});
 
