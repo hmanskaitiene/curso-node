@@ -9,9 +9,9 @@ Ejecutar "npm start" para crear la estructura de db y arrancar el server.
 
 Opcionalmente se puede ejecutar indicando el puerto:
 
-'''
+```
 node server.js -p NUMERO_PUERTO
 node server.js -port NUMERO_PUERTO
-'''
+```
 
 Si no se le indica el puerto, toma 8080 por default
