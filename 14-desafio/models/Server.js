@@ -79,8 +79,8 @@ class Server {
         this.app.use( this.paths.random, routerRandom );
 
         this.app.use("*", (req, res) => {
-            const error_message = `Ruta ${req.path} método ${req.method} no implementada`;
-            logger.warn(error_message)
+            const error_message = `Ruta ${req.originalUrl} método ${req.method} no implementada`;
+            this.logger.warn(error_message)
             res.status(404).json({"message": error_message})
         });
 
