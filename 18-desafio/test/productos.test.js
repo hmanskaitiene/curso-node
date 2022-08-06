@@ -21,8 +21,8 @@ const dataUpdated = {
 let cantidadProductos = 0;
 let productId = 0;
 
-describe('Pruebas de productos ',() => {
-    it('Obtener un estado 200 al pedir productos', (done) => {
+describe('Estado del request al solicitar productos',() => {
+    it('Debería devolver un estado 200 al pedir productos', (done) => {
         chai.request(url)
         .get('/api/productos')
         .end( (err,res) => {
@@ -32,8 +32,10 @@ describe('Pruebas de productos ',() => {
             done();
         });
     });
+});
 
-    it('Obtener la cantidad de productos y esperar un array', (done) => {
+describe('Obtener productos',() => {
+    it('Debería obtener el listado de productos y esperar un array', (done) => {
         chai.request(url)
         .get('/api/productos')
         .end( (err,res) => {
@@ -43,7 +45,10 @@ describe('Pruebas de productos ',() => {
             done();
         });
     });
-    it('Insertar un producto y esperar un objeto', (done) => {
+});
+
+describe('Insertar producto',() => {
+    it('Debería poder insertar un producto obtener un objeto', (done) => {
         chai.request(url)
         .post('/api/productos')
         .send(data)
@@ -55,7 +60,7 @@ describe('Pruebas de productos ',() => {
             done();
         });
     });
-    it('Validar que la cantidad de productos sea la correcta', (done) => {
+    it('Debería tener la cantidad de productos correcta despues de haber insertado el producto', (done) => {
         chai.request(url)
         .get('/api/productos')
         .end( (err,res) => {
@@ -65,7 +70,11 @@ describe('Pruebas de productos ',() => {
             done();
         });
     });
-    it('Modificar un producto y ver el dato modificado', (done) => {
+
+});
+
+describe('Modificación de producto',() => {
+    it('Debería poder modificar un producto y ver el dato modificado', (done) => {
         chai.request(url)
         .put(`/api/productos/${productId}`)
         .send(dataUpdated)
@@ -77,7 +86,10 @@ describe('Pruebas de productos ',() => {
             done();
         });
     });
-    it('Eliminar el producto', (done) => {
+});
+
+describe('Eliminación de producto',() => {
+    it('Debería poder eliminar un producto', (done) => {
         chai.request(url)
         .delete(`/api/productos/${productId}`)
         .end( (err,res) => {
@@ -87,7 +99,7 @@ describe('Pruebas de productos ',() => {
             done();
         });
     });
-    it('Validar que la cantidad de productos sea la correcta despues de la eliminación', (done) => {
+    it('Debería tener la cantidad de productos correcta despues de haber eliminado el producto', (done) => {
         chai.request(url)
         .get('/api/productos')
         .end( (err,res) => {
@@ -98,3 +110,4 @@ describe('Pruebas de productos ',() => {
         });
     });
 });
+

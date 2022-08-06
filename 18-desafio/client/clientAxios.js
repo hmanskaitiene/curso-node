@@ -15,35 +15,31 @@ const updateProduct = {
 }
 
 // Este el id de producto para pruebas
-const productId = 11;
+let productId = 0;
 
 axios.get(url)
 .then(result => {
     console.log("El listado de productos :")
     console.log(result.data)
+    return axios.post(url, data)
 })
-
-
-/*
-axios.post(url, data)
 .then(result => {
+    console.log("\n\n")
     console.log("Se ha creado el siguiente producto:")
     console.log(result.data)
+    productId = result.data.id;
+    return axios.put(`${url}/${productId}`, updateProduct)
 })
-*/
-/*
-axios.put(`${url}/${productId}`, updateProduct)
 .then(result => {
+    console.log("\n\n")
     console.log("Se ha modificado el siguiente producto:")
     console.log(result.data)
+    return axios.delete(`${url}/${productId}`)
 })
-*/
-
-/*
-axios.delete(`${url}/${productId}`)
 .then(result => {
+    console.log("\n\n")
     console.log("Se ha eliminado el siguiente producto:")
     console.log(result.data)
 })
-*/
+
 

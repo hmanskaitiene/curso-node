@@ -8,7 +8,8 @@
     "start": "node app.js",
     "dev": "nodemon app.js --ignore ./DB",
     "create-db": "node build_db.js",
-    "test": "mocha ./test/productos.test.js"
+    "test": "mocha ./test/productos.test.js",
+    "client-test": "node ./client/clientAxios.js"
   },
   "keywords": [],
   "author": "",
