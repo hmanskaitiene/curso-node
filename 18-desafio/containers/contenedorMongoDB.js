@@ -5,25 +5,24 @@ class ContenedorMongoDB {
         this.model = model;
     }
 
-    async getAll() {
-        try{
-            const all = await this.model.find({});
-            return all;
-        }
-        catch(error){
-            return `Hubo un error "${error}"`
-        }
+    getAll = async () => {
+        const all = await this.model.find({});
+        return all;
     }
 
-    async save(item) {
-        try{
-            const id = await this.model.create(item);
-            return id;
-        }
-        catch(error){
-            return `Hubo un error "${error}"`
-        }
+    save = async (item) => {
+        const id = await this.model.create(item);
+        return id;
     }
+    update = async (id, item) => {
+        const updated = await this.model.findOneAndUpdate({ _id: id },item);
+        return updated;
+    }
+    delete = async (id) => {
+        const deleted = await this.model.findOneAndDelete({ _id: id });
+        return deleted;
+    }
+
 }
 
 export default ContenedorMongoDB;

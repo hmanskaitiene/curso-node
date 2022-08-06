@@ -28,14 +28,42 @@ class ProductService {
     }
 
     getAll = async () => {
-      let result = await this.productsDao.getAll();
-      let data = result.map((product) => new ProductDto(product));
-      return { status:200, data } 
+      try {
+        let result = await this.productsDao.getAll();
+        let data = result.map((product) => new ProductDto(product));
+        return { status:200, data }         
+      } catch (error) {
+        return { status:400, error } 
+      }
+
     };
 
-    save = async (product) => {
-      const data = await this.productsDao.save(new ProductDto(product));
-      return { status:200, data:new ProductDto(data) } 
+    productCreate = async (product) => {
+      try {
+        const data = await this.productsDao.save(new ProductDto(product));
+        return { status:200, data:new ProductDto(data) }         
+      } catch (error) {
+        return { status:400, data: { error:error.message } } 
+      }
+    };
+
+    productUpdate = async (id, product) => {
+      try {
+        const data = await this.productsDao.update(id, new ProductDto(product));
+        return { status:200, data:new ProductDto(data) }         
+      } catch (error) {
+        return { status:400, data: { error:error.message } } 
+      }
+
+    };
+    productDelete = async (id) => {
+      try {
+        const data = await this.productsDao.delete(id);
+        return { status:200, data:new ProductDto(data) }         
+      } catch (error) {
+        return { status:400, data: { error:error.message } } 
+      }
+
     };
 
 }

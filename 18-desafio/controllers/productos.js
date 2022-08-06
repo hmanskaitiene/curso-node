@@ -16,8 +16,8 @@ const getAll = async (req, res) => {
     res.status(response.status).json(response.data)
 }
 
-const create = async (req, res) => {
-    const response = await productService.save(req.body);
+const productCreate = async (req, res) => {
+    const response = await productService.productCreate(req.body);
     const io = await req.app.get("socket");    
     
     // Por el momento se envian todos los productos. Lo ideal seria mandar solo el producto creado
@@ -27,9 +27,24 @@ const create = async (req, res) => {
     res.status(response.status).json(response.data)
 }
 
+const productUpdate = async (req, res) => {
+    const id = req.params.id;
+    const producto = req.body;
+    const response = await productService.productUpdate(id, producto);
+    res.status(response.status).json(response.data)
+}
+
+const productDelete = async (req, res) => {
+    const id = req.params.id;
+    const response = await productService.productDelete(id);
+    res.status(response.status).json(response.data)
+}
+
 export default {
     productosGetTestView,
     productosGetTest,
     getAll,
-    create,
+    productCreate,
+    productUpdate,
+    productDelete,
 }
