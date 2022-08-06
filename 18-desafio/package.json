@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js --ignore ./DB",
-    "create-db": "node build_db.js"
+    "create-db": "node build_db.js",
+    "test": "mocha ./test/productos.test.js"
   },
   "keywords": [],
   "author": "",
@@ -38,6 +39,9 @@
   },
   "devDependencies": {
     "artillery": "^2.0.0-22",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
     "nodemon": "^2.0.19"
   }
 }

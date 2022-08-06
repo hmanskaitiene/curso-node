@@ -30,9 +30,12 @@ class ProductService {
     getAll = async () => {
       try {
         let result = await this.productsDao.getAll();
+        console.log('Dentro del getall')
+        console.log(result)
         let data = result.map((product) => new ProductDto(product));
         return { status:200, data }         
       } catch (error) {
+        console.log('Dentro del error')
         return { status:400, error } 
       }
 
